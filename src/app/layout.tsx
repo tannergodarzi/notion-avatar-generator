@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Notion Portrait Generator',
-  description: 'Create and custome you',
+  description: 'Create and customize your Notion avatar',
 }
 
 export default function RootLayout({

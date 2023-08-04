@@ -9,6 +9,7 @@ function getRandomInt(min: number, max: number) {
 }
 
 export default function Generator() {
+	 if (typeof window === "undefined" || typeof document === "undefined") return;
 	const skintoneLayer = new Image(1200, 1200);
 	skintoneLayer.onload = ()=> console.log("Skin layer loaded")
 	skintoneLayer.src = `/skintone/${getRandomInt(1, 6)}.png`;
